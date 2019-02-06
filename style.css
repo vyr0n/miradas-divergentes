@@ -10,13 +10,79 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, three-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, feature-images, post-formats, theme-options
 Text Domain: MDWT
 */
+*,
+*:after,
+*:before{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
 html{
     font-family:'Raleway',sans-serif;
     background-color: #DEDEDE;
     color: black;
+    box-sizing: border-box;
 }
 
 .TitlePost{
     font-size: 14pt;
     
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*HEADER*/
+
+.Header,
+.Main,
+.Footer{
+    border: thin solid rgb(62, 17, 101);
+    margin-bottom: 1rem;
+}
+
+.Main {
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 'content sidebar'
+                         'pagination sidebar';
+    grid-gap:1rem;
+}
+
+.Main >*{
+    background-color: #DEDEDE;
+    padding: 1rem;
+    color: #222;
+}
+
+.Content {
+    grid-area: content;
+}
+
+.Content hr{
+    border: 1.5px solid rgb(62, 17, 101);
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.Sidebar {
+    grid-area: sidebar;
+}
+
+.Pagination{
+    grid-area: pagination;
+}
+
+.Other {
+    grid-area: other;
+}
+
+.Error404{
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: center;
 }

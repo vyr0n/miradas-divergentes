@@ -29,5 +29,6 @@
         <?php
             endif;
         ?>
+        <?php    get_sidebar();?>
     </header>
     <main class="Main">
