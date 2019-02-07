@@ -1,0 +1,27 @@
+/********** Custom Properties *************/
+
+:root{
+    --main-font:'Raleway';
+    --alternate-font:sans-serif;
+    --font-size: 16px;
+    --line-height:1.6;
+
+    --main-color: steelblue;
+    --main-modal-color: steelblue;
+    --second-color: steelblue;
+    --second-modal-color: steelblue;
+
+    --bg-color: steelblue;
+    --bg-modal-color: steelblue;
+    --bg-alternate-color: steelblue;
+    --border-color:steelblue ;
+
+    --text-color: steelblue;
+    --title-color: var(--second-color);
+
+    --link-color:var(--main-color);
+    --link-hover-color:var(--second-color);
+
+    --container-width:1200px;
+    --header-height: 4rem;
+}

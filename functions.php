@@ -12,8 +12,9 @@
 
  if(!function_exists('mdwt_scripts')):
     function mdwt_scripts(){
+        // wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,700', array(), '1.0.0', 'all');
+        // wp_register_style('style', get_stylesheet_uri(), array('google-fonts'), '1.0.0', 'all');
         wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,700', array(), '1.0.0', 'all');
-
         wp_register_style('style', get_stylesheet_uri(), array('google-fonts'), '1.0.0', 'all');
 
         wp_enqueue_style('google-fonts');
@@ -103,3 +104,7 @@ add_action('widgets_init', 'mdwt_register_sidebars');
 require_once get_template_directory().'/inc/custom-header.php';
 
 require_once get_template_directory().'/inc/customizer.php';
+
+require_once get_template_directory().'/inc/custom-login.php';
+
+require_once get_template_directory().'/inc/custom-admin.php';

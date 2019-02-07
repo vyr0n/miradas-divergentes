@@ -18,6 +18,27 @@ Text Domain: MDWT
     margin: 0;
 }
 
+@font-face{
+    font-family: 'Roboto'; 
+    src: url('fonts/Roboto-Bold.ttf') format('truetype'),
+         url('fonts/Roboto-Black.ttf') format('truetype'),
+         url('fonts/Roboto-BlackItalic.ttf') format('truetype'),
+         url('fonts/Roboto-Bold.ttf') format('truetype'),
+         url('fonts/Raleway-Bold.ttf') format('truetype'),
+         url('fonts/Roboto-BoldCondensed.ttf') format('truetype'),
+         url('fonts/Roboto-BoldCondensedItalic.ttf') format('truetype'),
+         url('fonts/Roboto-Italic.ttf') format('truetype'),
+         url('fonts/Roboto-Italic.ttf') format('truetype'),
+         url('fonts/Roboto-Light.ttf') format('truetype'),
+         url('fonts/Roboto-LightItalic.ttf') format('truetype'),
+         url('fonts/Roboto-Medium.ttf') format('truetype'),
+         url('fonts/Roboto-MediumItalic.ttf') format('truetype'),
+         url('fonts/Roboto-Regular.ttf') format('truetype'),
+         url('fonts/Roboto-Thin.ttf') format('truetype'),
+         url('fonts/Roboto-ThinItalic.ttf') format('truetype');
+}
+
+
 html{
     font-family:'Raleway',sans-serif;
     background-color: #DEDEDE;
@@ -34,6 +55,8 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+
 
 /*HEADER*/
 

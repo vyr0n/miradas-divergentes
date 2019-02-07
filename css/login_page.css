@@ -1,0 +1,40 @@
+body.login {
+    background-color: black;
+    background-image: url('../img/header-image.jpg');
+    background-size: cover;
+}
+body.login div#login {}
+body.login div#login h1 {}
+body.login div#login h1 a {
+    background-image: url('../svg/camara.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+body.login div#login form#loginform {
+    background-color: rgba(62, 17, 101, .80);
+    border-radius: 7px;
+}
+body.login div#login form#loginform p {}
+body.login div#login form#loginform p label {
+    color: #DEDEDE;
+}
+body.login div#login form#loginform input {
+    text-shadow: none;
+}
+body.login div#login form#loginform input#user_login {}
+body.login div#login form#loginform input#user_pass {}
+body.login div#login form#loginform p.forgetmenot {}
+body.login div#login form#loginform p.forgetmenot input#rememberme {}
+body.login div#login form#loginform p.submit {}
+body.login div#login form#loginform p.submit input#wp-submit {
+    background-color: #DEDEDE;
+    color: black;
+}
+body.login div#login p#nav {}
+body.login div#login p#nav a {
+    color: #DEDEDE;
+}
+body.login div#login p#backtoblog {}
+body.login div#login p#backtoblog a {
+    color: #DEDEDE;
+}
