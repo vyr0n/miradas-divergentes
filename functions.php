@@ -28,12 +28,10 @@
 
  add_action( 'wp_enqueue_scripts', 'mdwt_scripts');
 
-
-
  if(!function_exists('mdwt_setup')):
     function mdwt_setup(){
         add_theme_support( 'post-thumbnails' );
-
+        
         add_theme_support( 'html5', array(
             'comment-list',
             'comment-form',
@@ -41,12 +39,30 @@
             'gallery',
             'caption'
         ));
+        //Logo Personalizado
+        add_theme_support( 'custom-logo', array(
+            'height'=> 100,
+            'width'=> 100,
+            'flex-height'=> true,
+            'flex-width'=> true
+        ));
+        //Fondo / Background Personalizado
+        add_theme_support( 'custom-background', array(
+            'default-color'=> 'DEDEDE',
+            'default-image'=> get_template_directory_uri().'/img/background-image.png',            
+            'default-repeaat'=> 'repeat',
+            'default-position-x'=> '',
+            'default-position-y'=> '',
+            'default-size'=> '',
+            'default-attachment'=> 'fixed'
+        ));
+
+        // Activa la actualizacion selectiva de widgets en el personalizador
+        add_theme_support( 'customize-selective-refresh-widgets' );
     }
  endif;
 
  add_action('after_setup_theme', 'mdwt_setup');
-
-
 
 if(!function_exists('mdwt_menus')):
     function mdwt_menus(){
@@ -83,3 +99,7 @@ if(!function_exists('mdwt_register_sidebars')):
 endif;
 
 add_action('widgets_init', 'mdwt_register_sidebars');
+
+require_once get_template_directory().'/inc/custom-header.php';
+
+require_once get_template_directory().'/inc/customizer.php';
