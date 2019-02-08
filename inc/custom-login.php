@@ -21,3 +21,19 @@ if(!function_exists('mdwt_login_scripts')):
 endif;
 
 add_action('login_enqueue_scripts','mdwt_login_scripts');
+
+if(!function_exists('mdwt_login_logo_url')):
+    function mdwt_login_logo_url(){
+        return home_url();
+    }
+endif;
+
+add_filter( 'login_headerurl', 'mdwt_login_logo_url' );
+
+if(!function_exists('mdwt_login_logo_url_title')):
+    function mdwt_login_logo_url_title(){
+        return get_bloginfo( 'title' ).' | '.get_bloginfo('description');
+    }
+endif;
+
+add_filter( 'login_headertitle', 'mdwt_login_logo_url_title' );
