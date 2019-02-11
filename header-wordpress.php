@@ -6,12 +6,12 @@
     ?>
     <div class="WP-Header-branding">
         <h1 class="WP-Header-title">
-            <a href="<?php echo esc_url(home_url('/'));?>" >
-                <?php bloginfo('name')?>
+            <a href="<?php echo esc_url(home_url('/')); ?> ">
+                <?php bloginfo('name');?>
             </a>
         </h1>
         <p class="WP-Header-description">
-            <?php echo bloginfo('description')?>
+            <?php echo bloginfo('description');?>
         </p>
     </div>
 </header>

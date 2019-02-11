@@ -19,6 +19,8 @@ if(!function_exists('mdwt_customize_register')):
 
 endif;
 
+add_action( 'customize_register', 'mdwt_customize_register' );
+
 if(!function_exists('mdwt_customize_blogname')):
     function mdwt_customize_blogname(){
         bloginfo( 'name' );
@@ -30,3 +32,4 @@ if(!function_exists('mdwt_customize_blogdescription')):
         bloginfo( 'description' );
     }
 endif;
+?>

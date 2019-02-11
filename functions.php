@@ -7,21 +7,18 @@
  * @package WordPress
  * @subpackage mdwt
  * @since 1.0.0
- * @version 1.0.0
+ * @version 1.5.0
  */
 
  if(!function_exists('mdwt_scripts')):
     function mdwt_scripts(){
-        // wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,700', array(), '1.0.0', 'all');
-        // wp_register_style('style', get_stylesheet_uri(), array('google-fonts'), '1.0.0', 'all');
         wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:400,700', array(), '1.0.0', 'all');
-        // wp_register_style( 'Roboto', 'fonts/Roboto-Regular.ttf', array(), '1.0.0', 'all');
         wp_register_style('style', get_stylesheet_uri(), array('google-fonts'), '1.0.0', 'all');
 
         wp_enqueue_style('google-fonts');
         wp_enqueue_style('style');
 
-        wp_register_script( 'scripts', get_template_directory_uri().'/script.js', array('jquery'), '1.0.0', true );
+        wp_register_script( 'scripts', get_template_directory_uri().'/scripts.js', array('jquery'), '1.0.0', true );
 
         wp_enqueue_script( 'jquery');
         wp_enqueue_script( 'scripts');
@@ -50,9 +47,9 @@
         ));
         //Fondo / Background Personalizado
         add_theme_support( 'custom-background', array(
-            'default-color'=> 'DEDEDE',
-            'default-image'=> get_template_directory_uri().'/img/background-image.png',            
-            'default-repeaat'=> 'repeat',
+            'default-color'=> '000',
+            'default-image'=> get_template_directory_uri().'', //'/img/background-image.jpg',
+            'default-repeat'=> 'repeat',
             'default-position-x'=> '',
             'default-position-y'=> '',
             'default-size'=> '',
@@ -83,7 +80,7 @@ if(!function_exists('mdwt_register_sidebars')):
             'name' => __('Sidebar Principal', 'mdwt'),
             'id' => 'main_sidebar',
             'description' => __('Este es el sidebar principal', 'mdwt'),
-            'before_widget' => '<article id="%1$s" class="Widget %s$s">',
+            'before_widget' => '<article id="%1$s" class="Widget %2$s">',
             'after_widget' => '</article>',
             'before_title' => '<h3>',
             'after_title' => '</h3>'
@@ -92,7 +89,7 @@ if(!function_exists('mdwt_register_sidebars')):
             'name' => __('Sidebar del Pie de Página', 'mdwt'),
             'id' => 'footer_sidebar',
             'description' => __('Este es el sidebar del pie de página', 'mdwt'),
-            'before_widget' => '<article id="%1$s" class="Widget %s$s">',
+            'before_widget' => '<article id="%1$s" class="Widget %2$s">',
             'after_widget' => '</article>',
             'before_title' => '<h3>',
             'after_title' => '</h3>'

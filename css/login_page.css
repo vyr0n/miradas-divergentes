@@ -22,10 +22,19 @@ body.login div#login form#loginform p label {
 body.login div#login form#loginform input {
     text-shadow: none;
 }
-body.login div#login form#loginform input#user_login {}
-body.login div#login form#loginform input#user_pass {}
+body.login div#login form#loginform input#user_login {
+    background-color: black;
+    color: #DEDEDE;
+}
+body.login div#login form#loginform input#user_pass {
+    background-color: black;
+    color: #DEDEDE;
+}
 body.login div#login form#loginform p.forgetmenot {}
-body.login div#login form#loginform p.forgetmenot input#rememberme {}
+body.login div#login form#loginform p.forgetmenot input#rememberme {
+    background-color: black;
+    color: #DEDEDE;
+}
 body.login div#login form#loginform p.submit {}
 body.login div#login form#loginform p.submit input#wp-submit {
     background-color: #DEDEDE;

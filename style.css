@@ -13,12 +13,12 @@ Text Domain: MDWT
 *,
 *:after,
 *:before{
-    box-sizing: inherit;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-@font-face{
+/* @font-face{
     font-family: 'Roboto'; 
     src: url('fonts/Roboto-Bold.ttf') format('truetype'),
          url('fonts/Roboto-Black.ttf') format('truetype'),
@@ -36,7 +36,7 @@ Text Domain: MDWT
          url('fonts/Roboto-Regular.ttf') format('truetype'),
          url('fonts/Roboto-Thin.ttf') format('truetype'),
          url('fonts/Roboto-ThinItalic.ttf') format('truetype');
-}
+} */
 
 
 html{
@@ -55,8 +55,6 @@ img{
     max-width: 100%;
     height: auto;
 }
-
-
 
 /*HEADER*/
 

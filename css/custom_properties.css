@@ -1,22 +1,21 @@
 /********** Custom Properties *************/
-
-:root{
+:root {
     --main-font:'Roboto';
     --alternate-font:sans-serif;
-    --font-size: 18px;
+    --font-size: 16px;
     --line-height:1.6;
 
     --main-color: rgb(81,81,81);
-    --main-modal-color: ;
-    --second-color: rgb(62,17,101);;
-    --second-modal-color: ;
+    --main-modal-color: rgba(81,81,81,.75);
+    --second-color: rgb(62,17,101);
+    --second-modal-color: rgba(62,17,101,.75);
 
-    --bg-color: steelblue;
-    --bg-modal-color: steelblue;
-    --bg-alternate-color: steelblue;
-    --border-color:steelblue ;
+    --bg-color: ;
+    --bg-modal-color: ;
+    --bg-alternate-color: ;
+    --border-color: ;
 
-    --text-color: steelblue;
+    --text-color: #333;
     --title-color: var(--second-color);
 
     --link-color:var(--main-color);
